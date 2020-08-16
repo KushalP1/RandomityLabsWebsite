@@ -1,0 +1,17 @@
+{
+  "title": "Randomity LAbs",
+  "content": "intro.md",
+  "gallery": [
+    {
+      "title": "Mewt",
+      "copy": "Finance app built for MSMEs",
+      "image": "../images/gallery/logo.png"
+    },
+    {
+      "title": "Croosh",
+      "copy": "",
+      "image": "../images/gallery/logo.png"
+    }
+  ],
+  "content": "intro.md"
+}
