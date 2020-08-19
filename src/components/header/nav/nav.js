@@ -9,7 +9,7 @@ const Nav = () => (
         <Link to="/about">Portfolio</Link>
       </li>
       <li>
-        <a href="https://github.com/KushalP1">Careers</a>
+        <Link to="/careers">Careers</Link>
       </li>
     </ul>
   </Container>

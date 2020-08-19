@@ -1,18 +1,16 @@
 {
-  "title": "Randomity Labs",
-  "content": "intro.md",
-  "logo": "../images/gallery/logo.png",
-  "gallery": [
+  "title": "Careers",
+  "content": "content.md",
+  "people": [
     {
       "title": "Mewt",
       "copy": "Finance app built for MSMEs",
-      "image": "../images/gallery/logo.png"
+      "image": "../images/gallery/circle-cropped.png"
     },
     {
       "title": "Croosh",
       "copy": "",
       "image": "../images/gallery/logo.png"
     }
-  ],
-  "content": "intro.md"
+  ]
 }

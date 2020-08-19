@@ -7,16 +7,10 @@ import Gallery from 'components/gallery';
 import IOExample from 'components/io-example';
 import Modal from 'containers/modal';
 import { graphql } from 'gatsby';
+import BgImage from '../components/BgImage';
 
 const Index = ({ data }) => (
   <Layout>
-    <myvideo
-      src="https://i.imgur.com/gzFqNSW.mp4"
-      playsInline
-      loop
-      autoPlay
-      muted
-    />
     <Box>
       <Title as="h2" size="large">
         {data.homeJson.content.childMarkdownRemark.rawMarkdownBody}
@@ -42,6 +36,13 @@ export default Index;
 
 export const query = graphql`
   query HomepageQuery {
+    logo: file(relativePath: { eq: "logo.png" }) {
+      childImageSharp {
+        fluid(maxWidth: 300) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
     homeJson {
       title
       content {

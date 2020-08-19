@@ -32,21 +32,15 @@ export default createGlobalStyle`
   html {
     font-size: 62.5%;
   }
-
   body {
-    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
-    line-height: 1;
-    font-size: 1.6rem;
-    color: #000;
-    background-color: #ecbcb4;
-    -webkit-text-size-adjust: 100%;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    text-rendering: optimizeLegibility;
-    -webkit-font-feature-settings: "pnum";
-    font-feature-settings: "pnum";
-    font-variant-numeric: proportional-nums;
-  }
+    position: relative;
+width: 1440px;
+height: 900px;
+
+background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(proxyclick-visitor-management-system-l90zRbWvCoE-unsplash.jpg);
+}
+
+  
 
   ol, ul {
     list-style: none;
@@ -91,6 +85,13 @@ export default createGlobalStyle`
   bottom: 0;
   min-width: 100%;
   min-height: 100%;
+}
+
+  myimg {
+  width:300px;
+  height:300px;
+  object-fit:cover;
+  border-radius:50%;
 }
 
   p {

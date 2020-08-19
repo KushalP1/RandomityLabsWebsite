@@ -4,33 +4,33 @@ import { graphql } from 'gatsby';
 import Layout from 'components/layout';
 import Box from 'components/box';
 import Head from 'components/head';
-import Gallery from 'components/gallery';
+import People from 'components/people';
 import Title from 'components/title';
 
-const About = ({ data }) => (
+const Careers = ({ data }) => (
   <Layout>
-    <Head pageTitle={data.aboutJson.title} />
+    <Head pageTitle={data.careersJson.title} />
     <Box>
       <Title as="h2" size="large">
-        {data.aboutJson.content.childMarkdownRemark.rawMarkdownBody}
+        {data.careersJson.content.childMarkdownRemark.rawMarkdownBody}
       </Title>
     </Box>
 
-    <Gallery items={data.aboutJson.gallery} />
+    <People items={data.careersJson.people} />
 
     <div style={{ height: '50vh' }} />
   </Layout>
 );
 
-About.propTypes = {
+Careers.propTypes = {
   data: PropTypes.object.isRequired,
 };
 
-export default About;
+export default Careers;
 
 export const query = graphql`
-  query AboutQuery {
-    aboutJson {
+  query CareersQuery {
+    careersJson {
       title
       content {
         childMarkdownRemark {
@@ -38,12 +38,12 @@ export const query = graphql`
           rawMarkdownBody
         }
       }
-      gallery {
+      people {
         title
         copy
         image {
           childImageSharp {
-            fluid(maxHeight: 500, quality: 90) {
+            fluid(maxHeight: 200, quality: 100) {
               ...GatsbyImageSharpFluid_withWebp
             }
           }
