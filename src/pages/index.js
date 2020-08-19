@@ -11,13 +11,15 @@ const Index = ({ data }) => (
   </Container>
 );
 
-About.propTypes = {
+Index.propTypes = {
   data: PropTypes.object.isRequired,
 };
 
 export default Index;
 
-const Container = styled.div``;
+const Container = styled.div`
+  background-color: #fafafa;
+`;
 export const query = graphql`
   query AboutQuery {
     aboutJson {
