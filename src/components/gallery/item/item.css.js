@@ -16,3 +16,40 @@ export const Copy = styled.p`
     margin-bottom: 4rem;
   `};
 `;
+export const Container = styled.div`
+  position: absolute;
+  width: 240px;
+  height: 260px;
+  background: url(Landing.png);
+  border-radius: 20px;
+`;
+
+export const Label = styled.div`
+  position: absolute;
+  width: 200px;
+  height: 60px;
+  left: -10px;
+  top: 50px;
+
+  background: #f67280;
+  border-radius: 7.5px;
+`;
+export const Text = styled.text`
+  position: absolute;
+  left: -4.17%;
+  right: 20.83%;
+  top: 19.23%;
+  bottom: 57.69%;
+
+  font-family: Quicksand;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 50px;
+  display: flex;
+  align-items: center;
+  text-indent: 20px;
+  text-transform: capitalize;
+
+  color: #fafafa;
+`;
